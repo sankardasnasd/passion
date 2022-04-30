@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <script src="{% static 'js/jquery.js' %}"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <button id="btn" type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+            <div id="d1" class="cols-3" style="display: none;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus nam ab aspernatur blanditiis eligendi facilis itaque placeat magni. Quas cupiditate aut eligendi porro repellat ipsum ut dolor quidem adipisci quos.</div>
+            </div>
+    </div>
+    <p>welcome</p>
+    <button id="click1">show</button>
+      <select name="" id="sel"> <option value="">must select any one </option>
+          <option value="ad">adhar</option>
+          <option value="pa">pan</option>
+          <option value="mo">mobile</option>
+      
+      <input type="text" id="123" placeholder="enter your adhar number" style="display: none;">
+      <input type="text" id="1234" placeholder="enter your pan number" style="display: none;">
+      <input type="text" id="124" placeholder="enter your mobile number" style="display: none;">
+    </select>
+    <div class="row">
+   <div class="container1" style="border: 10px solid yellow; color: blue; "> 
+       <p class="text" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi nesciunt officiis laborum dolor repudiandae recusandae nisi, atque ex dignissimos reprehenderit voluptatem, dolorem quae aliquam at consectetur, id tempore quas? Dicta.</p></div>
+    <p class="p2">Lorem ipsum dolor sit amet.</p>
+  <p class="text">Lorem, ipsum dolor.</p>
+  <p class="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur debitis fuga aliquam? Voluptatum necessitatibus exercitationem illum saepe facere error nihil dolorem, fugiat libero praesentium aliquam distinctio. Tenetur deleniti ducimus reiciendis.</p>
+  <p class="p5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, natus optio facere voluptates pariatur, deserunt delectus, asperiores dolorem iure amet saepe voluptatem tempora dolores non ducimus nisi sint nesciunt? Dolorum.</p>
+
+  </div>
+    </div>
+      
+
+
+   
+    <script>
+        //         $('p').hide()
+        //     })
+
+        // })
+        // $(document).ready(function(){
+        //     $('#click').click(function(){
+        //         $('p').show()
+        //     })
+        // })
+
+        // $(document).ready(function(){
+        //     $('p').click(function(){
+        //         $('p').hide()
+        //     })
+        // }
+        // )
+
+        // $(document).ready(function(){
+        //     $('p').click(function(){
+        //         $(this).fadeOut()
+        //     })
+        // }
+        // )
+       
+        // $(document).ready(function(){
+        //     $('button').click(function(){
+        //         $('p').fadeToggle()
+        //     })
+        // }
+        // )
+        // $(document).ready(function(){
+        //     $('button').click(function(){
+        //         $('p').fadeTo(100,.5)
+        //     })
+        // }
+        // )
+        // $(document).ready(function(){
+        //     $('button').click(function(){
+        //         $('p').slideDown()
+        //     })
+        // }
+        // )
+
+        // $(document).ready(function(){
+        //     $('button').click(function(){
+        //         $('p').slideup()
+        //     })
+        // }
+        // )
+        
+
+        // $(document).ready(function(){
+        //     $('button').click(function(){
+        //         $('p').slideDown()
+        //     })
+        // }
+        // )
+       
+       $('#sel').click(function(){
+           if($('#sel').val()=="ad"){
+               $('#123').show()
+               $('#1234').hide()
+               $('#124').hide()
+           }
+           else if($('#sel').val()=="pa"){
+               $('#1234').show()
+               $('#124').hide()
+               $('#123').hide()
+           }
+           else if($('#sel').val()=="mo"){
+               $('#124').show()
+               $('#1234').hide()
+               $('#123').hide()
+       }
+    })
+
+       
+       
+
+
+    </script>
+    
+</body>
+</html>

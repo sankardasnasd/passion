@@ -1,0 +1,120 @@
+ /* *{
+    color: rgb(255, 255, 255);
+      background-color: lightcoral; 
+      display: inline;
+      border: 20px; 
+     */
+ /* } */
+
+
+
+
+ *{
+     margin: 100;
+     padding: 110;
+
+ }
+
+
+
+ .nav-link{
+     width: 100px;
+     padding-right: 10px;
+ }
+
+
+ .responsive {
+    max-width: 100%;
+    height: auto;
+  }
+ 
+  .row1{
+      display: inline;
+      color: pink;
+      padding-inline-end: 10px;
+      padding: 30px;
+      right: 35px;
+  }
+  .nav-item1{
+    padding: 1px;
+      right: 100px ;
+      width: 100px;
+  }
+
+ .container{
+     background-color: rgb(255, 255, 255);
+ }
+
+
+
+ .footer{
+     background-color: grey;
+ }
+
+
+ 
+ /* .p1{
+    color: red;
+    
+}
+div{
+    border: 1px solid red;
+    background-color: aquamarine;
+}
+
+#a1{
+    color: blue;
+}
+p span{
+    color: blueviolet;
+}
+input[id="e"]{
+    color: red;
+} 
+p, h1, input{
+    color: red;
+} */
+
+/* /div span{
+    background-color: inherit;
+
+
+/* } */
+/* img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+   } 
+  #menu li{  
+     display: inline;
+     font-size: 1px;
+     padding-right: 1px;
+     float: right;
+     /* width: 10px */
+  
+  .t1{
+     display: inline;
+     font-size: 2px;
+     
+ }   
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+ 
+
+ 
+
+ 

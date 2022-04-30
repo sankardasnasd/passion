@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="1" >
+    <input type="text" id="2">
+    <input type="text" id="3">
+
+    <p id="p1">hrjytk</p>
+    
+    <h1 id="hh"></h1>
+    <button onclick=" fun()">click here</button>
+
+    <p  onclick="fun(2,8)">gh</p> -->
+    <button onclick="fun(2,8)">click</button>
+    <script>
+
+        // for(i = 0; i <= 10 ; i++){
+        //   if(i %2 == 1){
+        //     console.log(i)
+        //   }   
+        // }
+
+        // i = 0
+        // while (i < 10) {
+        //     if (i % 2 == 0) {
+        //         console.log(i)
+        //     }
+        //     i++
+        // }
+
+        // i=0
+        // do {
+        //     if(i % 2== 1){
+
+            
+        //     console.log(i)
+        //  }
+        //     i++
+            
+            
+        // }
+        // while (i<10);
+
+// i=0
+// while(i<=5){
+//     console.log("hii")
+//     i++
+// }
+        
+// function fun(a,b){
+//     c=a*b
+//     // console.log(c)
+//     return c
+// }
+// console.log(fun(1,2))
+// x=fun(2,3)
+// console.log(x)
+// d=fun(3,8)
+// console.log(d)
+
+// f=fun(4,7) 
+// console.log(f)
+
+
+function fun(a,b){
+    d=(a%b)
+    console.log(d)
+    // return d
+}
+//    console.log(fun(3,4)) 
+//    s=fun(2,8)
+//    console.log(s)
+   
+//    console.log(fun(2,6))
+//    b=fun(7,8)
+//    console.log(b)
+// a=Number(prompt("1stnum"))
+// b=Number(prompt("2nd num"))
+ function fun(){
+    a=Number( document.getElementById('1').value)
+    b=Number( document.getElementById('2').value)
+   
+   c=a+b
+    console.log(c)
+    document.getElementById('3').value=c
+   
+    document.getElementById('hh').innerHTML=c
+    document.getElementById('p1').innerHTML="cnhg"
+    
+} 
+   
+    </script>
+</body>
+
+</html>
