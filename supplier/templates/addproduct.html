@@ -1,0 +1,67 @@
+<!-- {% extends 'reseller/reseller_master.html' %} -->
+{% extends %}
+{% block content %}
+{% load static %}
+
+<style>
+    .rightside {
+            width: 100%;
+    }
+</style>
+
+<div class="py-5 text-left">
+    <h2>Add product</h2>
+</div>
+<div class="row">
+    <div class="col-md-8 order-md-1">
+        <form action="" class="needs-validation" id="add_product">
+            <div class="mb-3">
+                <label for="product name">Product Name</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" name="" id="title" placeholder="Product Name" required>
+                    <div class="invalid-feedback">
+                        Product Name is Required.
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="description">Description</label>
+                <div class="input-group">
+                    <textarea class="form-control" id="description" required></textarea>
+
+                </div>
+            </div>
+    </div>
+</div>
+
+<div class="mb-3">
+    <label for="customFile">Upload product pictures</label>
+    <input type="file" id="customFile" placeholder="choose" class="form-control" required>
+    <div class="invalid-feedback">
+        please upload a picture.
+    </div>
+</div>
+<div class="mb-3">
+    <label for="price">Price</label>
+    <div class="input-group">
+        <input type="number" class="form-control" id="price" placeholder="$ 0.0" required>
+        <div class="invalid-feedback">
+            Please enter the price.
+        </div>
+    </div>
+</div>
+<div class="mb-3">
+    <label for="stock">Stock</label>
+    <div class="input-group">
+        <input type="number" class="form-control" id="quantity" placeholder="Availabel stock" required>
+        <div class="invalid-feedback">
+            Please enter the quantity.
+        </div>
+    </div>
+</div>
+<div class="mb-3">
+    <button class="btn btn-primary btn-lg btn-block" type="submit">Save</button>
+</div>
+</form>
+
+{% endblock %}

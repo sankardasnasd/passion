@@ -38,3 +38,27 @@ def jsloops(request):
 def jquery(request):
     return render(request, 'jquery.html')    
 
+def men(request):
+    return render(request, 'men.html')    
+
+def women(request):
+    return render(request, 'women.html')    
+
+def kids(request):
+    return render(request, 'kids.html')    
+
+def contact(request):
+    return render(request, 'contact.html')    
+
+def fooditems(request):
+    return render(request, 'fooditems.html')   
+
+def mobiles(request):
+    return render(request, 'mobiles.html') 
+
+def electronics(request):
+    return render (request, 'electronics.html')        
+
+
+def homeitems(request):
+    return render(request, 'home-items.html')

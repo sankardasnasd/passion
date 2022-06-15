@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+
+    <form>
+        <div class="form-group row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="text"  class="form-control-plaintext" id="staticEmail" value="" placeholder="enter email">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10" >
+            <input type="password" class="form-control" id="inputPassword" placeholder="enter passwrd">
+            <label for="inputPassword" class="col-sm-2 col-form-label"></label>
+          <div class="col-sm-10">
+            <input type="submit" class="form-control" id="submit">
+
+    
+
+          </div>
+        </div>
+
+
+
+      </form>
+      <script>
+          $(document).ready(function(){
+              $("validation").validate({
+                  rules:{
+
+                    username:"required",
+                    email:"required",
+                    password:"required"
+                  },
+                  messages:{
+                      username:"please enter your name",
+                      email:"please enter your email",
+                      password:"please enter your password"
+                  },
+                  submitHandler:function(form){
+                      form.submit
+                  }
+              })
+          })
+      </script>
+    
+</body>
+</html>

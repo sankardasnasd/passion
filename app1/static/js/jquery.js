@@ -1,14 +1,14 @@
-$(document).ready (function(){
-        $('#click1').click(function(){
-            $('p').hide()
-        })
-    })
-    // $(document).ready (function(){
-    //     $('p').filter('.text').css({"border":"10px solid red"})
+// $(document).ready (function(){
+//         $('#click1').click(function(){
+//             $('p').hide()
+//         })
+//     })
+//     // $(document).ready (function(){
+//     //     $('p').filter('.text').css({"border":"10px solid red"})
 
-        $(document).ready (function(){
-            $('p').not('.text').css({" border":"10px solid "})
-    })
+//         $(document).ready (function(){
+//             $('p').not('.text').css({" border":"10px solid "})
+//     })
     
 
     // $(document).ready(function(){
@@ -33,5 +33,26 @@ $(document).ready (function(){
 
 
         // })
+
+        
+        //   $(document).ready(function(){
+        //       $("validation").validate({
+        //           rules:{
+
+        //             username:"required",
+        //             email:"required",
+        //             password:"required"
+        //           },
+        //           messages:{
+        //               username:"please enter your name",
+        //               email:"please enter your email",
+        //               password:"please enter your password"
+        //           },
+        //           submitHandler:function(form){
+        //               form.submit
+        //           }
+        //       })
+        //   })
+     
 
 
